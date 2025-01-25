@@ -1,0 +1,179 @@
+#sports {
+	float: left;
+	width: 90%;
+	background-color: #adadada6;
+	padding-top: 2em;
+	margin-left: 5em;
+	border-radius: 2%;
+	padding-bottom: 5em;
+	margin-bottom: 3em;
+}
+
+#lsports {
+	float: left;
+	width: 50%;
+}
+
+#rsports {
+	float: right;
+	width: 50%;
+	padding-top: 2em;
+}
+
+#lsports h1 {
+	font-family: 'Gowun Dodum', sans-serif;
+	text-align: center;
+	color: rgb(124, 69, 18);
+	padding-right: 1em;
+}
+
+#sportspara {
+	font-size: 26px;
+	color: black;
+	text-align: center;
+	margin-bottom: 2em;
+	padding-top: 1em;
+}
+
+#lsports a {
+	text-decoration: none;
+	color: black;
+}
+
+#b4 {
+	background-color: #c9c9c9;
+	border: none;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-left: 8em;
+	padding: 10px;
+}
+
+.sSlides {
+	display: none;
+}
+
+
+/* Slideshow container */
+
+.sslideshow {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	width: 535px;
+}
+
+
+/* Next & previous buttons */
+
+.sprev,
+.snext {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background-color: black;
+}
+
+
+/* Position the "next button" to the right */
+
+.snext {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.sprev:hover,
+.snext:hover {
+	color: red;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Caption text */
+
+.stext {
+	font-family: 'Gowun Dodum', sans-serif;
+	color: white;
+	font-size: 18px;
+	background-color: black;
+	padding: 1em 0em 1em 0em;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.stext a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* The dots/bullets/indicators */
+
+.sdot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: rgb(124, 69, 18);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.sactive,
+.sdot:hover {
+	background-color: black;
+}
+
+
+/* Fading animation */
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+	.sprev,
+	.snext,
+	.stext {
+		font-size: 11px
+	}
+}
+

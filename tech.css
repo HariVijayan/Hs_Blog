@@ -1,0 +1,631 @@
+body {
+	margin: 0 auto;
+	font-family: 'Signika', sans-serif;
+}
+
+body img {
+	height: 320px;
+	width: 535px;
+}
+
+#header {
+	background-image: url('mainbg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#header {
+	float: left;
+	width: 100%;
+}
+
+#hs {
+	font-size: 70px;
+	color: gold;
+	text-align: center;
+	font-family: 'Style Script', cursive;
+	margin: 0;
+	padding-top: 3em;
+	padding-right: 5em;
+}
+
+#header p {
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Gowun Dodum', sans-serif;
+	padding-bottom: 3em;
+}
+
+#category {
+	float: left;
+	width: 100%;
+	margin: 1em 0em 2em 0em;
+}
+
+#b2 {
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-left: 6em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	border-radius: 10%;
+}
+
+#category a {
+	text-decoration: none;
+	color: rgb(124, 69, 18);
+}
+
+#lhead {
+	float: left;
+	width: 65%;
+}
+
+#rhead {
+	float: right;
+	width: 35%;
+}
+
+#b1 {
+	background: rgb(0, 0, 0, 0);
+	border: none;
+	font-size: 30px;
+	font-family: 'Gowun Dodum', sans-serif;
+	margin-bottom: 1em;
+	border-radius: 10%;
+	padding: 0.5em 1em 0.5em 1em;
+	margin-left: 3em;
+	margin-top: 1em;
+}
+#rhead h1{
+	font-size: 30px;
+	font-family: 'Gowun Dodum', sans-serif;
+	color: gold;
+	padding-top: 1em;
+	padding-left: 4em;
+}
+
+#header a {
+	text-decoration: none;
+	color: gold;
+}
+#rhead li {
+	display: inline;
+}
+
+#rhead a {
+	color: gold;
+}
+
+#rhead a:hover {
+	cursor: pointer;
+}
+
+#rhead i {
+	font-size: 35px;
+	padding-left: 2em;
+}
+
+
+
+
+#tech {
+	float: left;
+	width: 90%;
+	background-color: #adadada6;
+	padding-top: 2em;
+	margin-left: 5em;
+	border-radius: 2%;
+	padding-bottom: 5em;
+	margin-bottom: 3em;
+}
+
+#ltech {
+	float: left;
+	width: 50%;
+}
+
+#rtech {
+	float: right;
+	width: 50%;
+	padding-top: 2em;
+}
+
+#ltech h1 {
+	font-family: 'Gowun Dodum', sans-serif;
+	text-align: center;
+	color: rgb(124, 69, 18);
+	padding-right: 1em;
+}
+
+#techpara {
+	font-size: 26px;
+	color: black;
+	text-align: center;
+	margin-bottom: 2em;
+	padding-top: 1em;
+}
+
+#ltech a {
+	text-decoration: none;
+	color: black;
+}
+
+#b3 {
+	background-color: #c9c9c9;
+	border: none;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-left: 8em;
+	padding: 10px;
+}
+
+.tSlides {
+	display: none;
+}
+
+
+/* Slideshow container */
+
+.tslideshow {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	width: 535px;
+}
+
+
+/* Next & previous buttons */
+
+.tprev,
+.tnext {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background-color: black;
+}
+
+
+/* Position the "next button" to the right */
+
+.tnext {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.tprev:hover,
+.tnext:hover {
+	color: red;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Caption text */
+
+.ttext {
+	font-family: 'Gowun Dodum', sans-serif;
+	color: white;
+	font-size: 18px;
+	background-color: black;
+	padding: 1em 0em 1em 0em;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.ttext a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* The dots/bullets/indicators */
+
+.tdot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: rgb(124, 69, 18);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.tactive,
+.tdot:hover {
+	background-color: black;
+}
+
+
+/* Fading animation */
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+	.tprev,
+	.tnext,
+	.ttext {
+		font-size: 11px
+	}
+}
+
+#b7 {
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-left: 8.5em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	border-radius: 10%;
+}
+
+#content {
+	float: left;
+	width: 90%;
+	background-color: #adadada6;
+	padding-top: 2em;
+	margin-left: 5em;
+	border-radius: 2%;
+	padding-bottom: 5em;
+	margin-bottom: 3em;
+}
+
+#content h1 {
+	font-family: 'Gowun Dodum', sans-serif;
+	text-align: center;
+	color: rgb(124, 69, 18);
+	padding-right: 1em;
+}
+
+#usercontact{
+	float: left;
+	width: 100%;
+	background-image: url('uabg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 3em;
+}
+
+#usercontact h1 {
+	font-family: 'Gowun Dodum', sans-serif;
+	text-align: center;
+	color: rgb(124, 69, 18);
+	padding: 2em 4em 2em 0em;
+}
+
+#luc{
+	float: left;
+	width: 40%;
+}
+#ruc{
+	float: right;
+	width: 60%;
+}
+#luc1 {
+	font-family: 'Gowun Dodum', sans-serif;
+	color: #fff;
+	padding-left: 22em;
+	padding-bottom: 2em;
+	margin-top: 0em;
+    padding-top: 0.8em;
+}
+#luc2 {
+	font-family: 'Gowun Dodum', sans-serif;
+	color: #fff;
+	padding-left: 22em;
+	padding-bottom: 2em;
+}
+#luc3 {
+	font-family: 'Gowun Dodum', sans-serif;
+	color: #fff;
+	padding-left: 22em;
+	padding-bottom: 2em;
+}
+#luc4 {
+	font-family: 'Gowun Dodum', sans-serif;
+	color: #fff;
+	padding-left: 22em;
+	padding-bottom: 2em;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 55%;
+	padding: 12px;
+	border: none;
+	border-radius: 6px;
+	margin-top: 6px;
+	margin-bottom: 40px;
+	resize: vertical;
+	background-color: #00000000;
+	color: white;
+}
+
+input[type=submit] {
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 1em;
+	margin-left: 22em;
+	background-color: #000000;
+	border: none;
+}
+
+input[type=submit]:hover {
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+#aname{
+	margin-bottom: 3em;
+}
+#amailid{
+	margin-bottom: 3em;
+}
+#aph{
+	margin-bottom: 3em;
+}
+#techimage{
+	float: left;
+	width: 40%;
+	padding-left: 3em;
+	padding-bottom: 3em;
+}
+#techimage img{
+	height: 320px;
+	width: 550px;
+	padding-top: 2em;
+}
+#technews{
+	float: right;
+	width: 50%;
+	text-align: center;
+	padding-right: 3em;
+	padding-bottom: 3em;
+
+}
+#articlesshorts{
+	font-size: 23px;
+	color: black;
+	text-align: center;
+    padding-left: 2em;
+}
+
+#b8 {
+	background-color: #c9c9c9;
+	border: none;
+	font-size: 22px;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-left: 2em;
+	padding: 10px;
+}
+#b8 a{
+	color:#000000;
+	text-decoration: none;
+}
+#sportsimage{
+	float: left;
+	width: 40%;
+	padding-left: 3em;
+	padding-bottom: 3em;
+}
+#sportsimage img{
+	height: 320px;
+	width: 550px;
+	padding-bottom: 3em;
+}
+#sportsnews{
+	float: right;
+	width: 50%;
+	text-align: center;
+	padding-right: 3em;
+	padding-bottom: 3em;
+
+}
+
+#b9 {
+	background-color: #c9c9c9;
+	border: none;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-left: 0em;
+	padding: 10px;
+}
+#b9 a{
+	color:#000000;
+	text-decoration: none;
+}#sportsimage{
+	float: left;
+	width: 40%;
+	padding-left: 3em;
+	padding-bottom: 3em;
+}
+#sportsimage img{
+	height: 320px;
+	width: 550px;
+	padding-bottom: 3em;
+}
+#sportsnews{
+	float: right;
+	width: 50%;
+	text-align: center;
+	padding-right: 3em;
+	padding-bottom: 3em;
+
+}
+#b9 {
+	background-color: #c9c9c9;
+	border: none;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-left: 0em;
+	padding: 10px;
+}
+#b9 a{
+	color:#000000;
+	text-decoration: none;
+}
+
+#entertainmentimage{
+	float: left;
+	width: 40%;
+	padding-left: 3em;
+	padding-bottom: 3em;
+}
+#entertainmentimage img{
+	height: 320px;
+	width: 550px;
+	padding-bottom: 3em;
+}
+#entertainmentnews{
+	float: right;
+	width: 50%;
+	text-align: center;
+	padding-right: 3em;
+	padding-bottom: 3em;
+
+}
+#politicsimage{
+	float: left;
+	width: 40%;
+	padding-left: 3em;
+	padding-bottom: 3em;
+}
+#politicsimage img{
+	height: 320px;
+	width: 550px;
+	padding-bottom: 3em;
+}
+#politicsnews{
+	float: right;
+	width: 50%;
+	text-align: center;
+	padding-right: 3em;
+	padding-bottom: 3em;
+
+}
+#techcontent{
+	float: left;
+    width: 90%;
+    height: 425px;
+    margin: 1em 0em 1em 0em;
+    border: 3px solid black;
+    margin-left: 4em;
+	padding-top: 1em;
+}
+
+#pagechange{
+	float: left;
+	width: 100%;
+	margin-bottom: 2em;
+}
+#pagechange a{
+	text-decoration: none;
+	color: rgb(124, 69, 18);
+	padding: 1em;
+}
+#b10{
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-right: 10em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	margin-left: 3.5em;
+}
+#b11{
+	background-color: white;
+	border: none;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	border-radius: 10%;
+	margin-left: 14em;
+}
+#arheading{
+	font-family: 'Gowun Dodum', sans-serif;
+    text-align: center;
+    color: rgb(124, 69, 18);
+	padding-left: 2em;
+}
+
+#rules {
+    float: left;
+    width: 90%;
+    background-color: #adadada6;
+    padding-top: 2em;
+	margin-top: 4em;
+    margin-left: 5em;
+    border-radius: 2%;
+    padding-bottom: 13em;
+    margin-bottom: 3em;
+}
+
+#rules p {
+    font-family: 'Gowun Dodum', sans-serif;
+    color: black;
+    padding-right: 1em;
+	font-size: 30px;
+	padding-left: 11em;
+	padding-right: 7em;
+}
+
+#ruc a {
+    font-family: 'Gowun Dodum', sans-serif;
+    text-align: center;
+    color: rgb(124, 69, 18);
+	text-decoration: underline;
+}
+#rules h1 {
+	font-family: 'Gowun Dodum', sans-serif;
+	text-align: center;
+	color: rgb(124, 69, 18);
+}
